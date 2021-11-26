@@ -1,0 +1,94 @@
+// the files used
+@use "var" as *;
+@use "mixins" as m;
+@use "responsive";
+
+// ~ the style ~ //
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+nav {
+  @include m.d_flex(left, center);
+
+  height: 10vh;
+  background: $main_color;
+  .nav-links {
+    @include m.d_flex(space-around, center);
+    list-style: none;
+    width: 50%;
+    height: 100%;
+    margin-left: auto;
+    li,
+    .main-link {
+      position: relative;
+      align-items: center;
+      align-items: start;
+
+      a {
+        color: $white_color;
+        cursor: pointer;
+        text-decoration: none;
+        font-size: $sizes;
+        padding-bottom: 30px;
+      }
+      .before-sub-links {
+        .sub-links {
+          background: $main_color;
+          position: absolute;
+          top: $sizes * 2.8;
+          left: $sizes - 1;
+          width: $sizes * 8;
+          padding: $sizes - 1 $sizes;
+          border-radius: $radius;
+          list-style: none;
+          transition: $trans - 0.7s;
+          overflow: hidden;
+          opacity: 0;
+          pointer-events: none;
+          li {
+            margin: $sizes 0;
+            font-size: $sizes;
+          }
+        }
+      }
+    }
+    .main-link:hover {
+      .sub-links {
+        pointer-events: all;
+        opacity: 1;
+      }
+    }
+  }
+
+  .logo {
+    @include m.d_flex(left, center);
+    li {
+      margin-left: $sizes;
+      list-style: none;
+      z-index: 201;
+      position: relative;
+      align-items: center;
+      align-items: start;
+      a {
+        color: $white_color;
+        text-decoration: none;
+        font-size: $sizes + 1;
+        padding-bottom: 30px;
+      }
+    }
+    li:hover {
+      border-bottom: none;
+    }
+  }
+
+  li {
+    transition: all $trans - 0.8s !important;
+  }
+  li:hover {
+    border-bottom: 1px solid $second_color;
+  }
+}

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Smooth Navbar</title>
+    <link rel="stylesheet" href="style/smooth-navbar.css" />
+    <script defer src="js/navbar.js"></script>
+  </head>
+  <body>
+    <nav>
+      <!-- For Hamburger Menu -->
+      <div class="hamburger">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+      </div>
+      <!-- The Logo -->
+      <ul class="logo">
+        <li><a href="#">Contact</a></li>
+      </ul>
+      <!-- The links of the navbar -->
+      <ul class="nav-links">
+        <!-- main-link for just the link that have dropdown menu -->
+        <li class="main-link">
+          <a>About</a>
+          <div class="before-sub-links">
+            <ul class="sub-links">
+              <li><a href="#">HTML</a></li>
+              <li><a href="#">CSS</a></li>
+              <li><a href="#">JS</a></li>
+              <li><a href="#">JS</a></li>
+              <li><a href="#">JS</a></li>
+              <li><a href="#">JS</a></li>
+              <li><a href="#">JS</a></li>
+            </ul>
+          </div>
+        </li>
+        <!-- main-link for just the link that have dropdown menu -->
+        <li class="main-link">
+          <a>About</a>
+          <!-- before-sub-links for get the height of the links when hide and show them -->
+          <div class="before-sub-links">
+            <!-- sub-links is the dropdown parent links -->
+            <ul class="sub-links">
+              <!-- the links of the dropdown -->
+              <li><a href="#">HTML</a></li>
+              <li><a href="#">CSS</a></li>
+              <li><a href="#">JS</a></li>
+              <li><a href="#">JS</a></li>
+              <li><a href="#">JS</a></li>
+              <li><a href="#">JS</a></li>
+              <li><a href="#">JS</a></li>
+            </ul>
+          </div>
+        </li>
+        <!-- some links without dropdown menu -->
+        <li><a href="#">Contact</a></li>
+        <li><a href="#">Projects</a></li>
+        <li><a href="#">Projects</a></li>
+        <li><a href="#">Projects</a></li>
+      </ul>
+    </nav>
+  </body>
+</html>
