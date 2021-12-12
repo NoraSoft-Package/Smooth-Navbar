@@ -17,7 +17,7 @@
 
 ## The Navbar v1
 
-<a href="https://imgbb.com/"><img src="https://ibb.co/mNwtR9Z" alt="ezgif-com-gif-maker" border="0" /></a>
+<a href="https://imgbb.com/"><img src="https://ibb.co/mNwtR9Z" alt="ezgif-com-gif-maker" border="0"></a>
 
 ## The Links is
 
