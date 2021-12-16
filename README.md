@@ -187,12 +187,19 @@
 
 ## CSS
 
-<p>This is CSS codes if you want SCSS don't take this codes and go down</p>
+> This is `CSS` codes if you want `SCSS` don't take this `codes` and go down
+
 <details>
 <summary>CSS</summary>
 <p>
 
 ```css
+:root {
+  --main_color: #22223b;
+  --second_color: #e71d36;
+  --white_color: #fff;
+}
+
 @media screen and (max-width: 768px) {
   nav {
     position: relative;
@@ -215,13 +222,13 @@
   nav .hamburger .line {
     width: 30px;
     height: 3px;
-    background: #fff;
+    background: var(--white_color);
     margin: 5px;
   }
   nav .nav-links {
     position: fixed;
     z-index: 200;
-    background: #22223b;
+    background: var(--main_color);
     height: 100vh !important;
     width: 100% !important;
     flex-direction: column !important;
@@ -263,7 +270,7 @@ nav {
   align-items: center;
   flex-wrap: wrap;
   height: 10vh;
-  background: #22223b;
+  background: var(--main_color);
 }
 nav .nav-links {
   display: flex;
@@ -284,7 +291,7 @@ nav .nav-links .main-link {
 }
 nav .nav-links li a,
 nav .nav-links .main-link a {
-  color: #fff;
+  color: var(--white_color);
   cursor: pointer;
   text-decoration: none;
   font-size: 1rem;
@@ -292,7 +299,7 @@ nav .nav-links .main-link a {
 }
 nav .nav-links li .before-sub-links .sub-links,
 nav .nav-links .main-link .before-sub-links .sub-links {
-  background: #22223b;
+  background: var(--main_color);
   position: absolute;
   top: 2.8rem;
   left: 0rem;
@@ -330,7 +337,7 @@ nav .logo li {
   align-items: start;
 }
 nav .logo li a {
-  color: #fff;
+  color: var(--white_color);
   text-decoration: none;
   font-size: 2rem;
   padding-bottom: 30px;
@@ -342,7 +349,7 @@ nav li {
   transition: all 0.2s !important;
 }
 nav li:hover {
-  border-bottom: 1px solid #e71d36;
+  border-bottom: 1px solid var(--second_color);
 }
 ```
 
